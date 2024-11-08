@@ -36,7 +36,7 @@ WORKDIR /web
 RUN npm ci
 RUN npm run build
 
-FROM ruby:2.7.3-alpine
+FROM ruby:2.7.7-alpine
 RUN gem install bundler:2.2.16
 
 COPY ./api /postfacto
